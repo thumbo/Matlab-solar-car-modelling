@@ -38,12 +38,3 @@ dP(1,1) = P(2);         % current speed
 dP(2,1) = ddxp;         % current acceleration
 
 end
-
-%George comment
-%{ 
-input structures, time, position, velocity
-output dx = V , dv = a
-when used with ode45 each loop calculates dx and dv and updates x = x + dx,
-v = v + dv.
-when used outside of ode45 calculates dv=a and stores a
-%}
