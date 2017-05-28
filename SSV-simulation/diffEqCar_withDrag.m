@@ -24,9 +24,6 @@ if motor.stallTorque<Tp
     Tp=motor.stallTorque;
 end
 
-%added (to check)
-%Tp = Up * Ip / dxp;
-
 % calculate current acceleration of the car
 Fmotor_atLoad = car.mechanicalEff*(Tp * motor.eff*car.gearRatio)/(car.wheelOuterRadius); 
 Fload_atLoad = car.mass*9.81060*sin(deg2rad(track.angle));
